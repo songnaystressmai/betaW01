@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Shows</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="rt-header">
+  <div class="rt-header-main">
+    <div class="rt-header-left">
+      <a href ="index.html">
+      <img src="images/logo1.svg" alt="Rotten Tomatoes" class="rt-logo" />
+      </a>
+    </div>
+    <div class="rt-header-search">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Tìm Kiếm" />
+      <i class="fa fa-times rt-search-clear"></i>
+    </div>
+    <div class="rt-header-links">
+      <a href="#">About Us<sup> ©</sup></a>
+      <button id="dark-mode-toggle" class="darkmode-btn" title="Chuyển Dark mode">
+        <span class="darkmode-icon">🌙</span>
+        </button>
+      <span id="user-menu-area"></span>
+    </div>
+  </div>
+  <div class="rt-header-menu">
+    <a href="phim.html">Phim</a>
+    <a href="shows.html">TV SHOWS</a>
+    <a href="store.html">CỬA HÀNG <span class="rt-menu-new">NEW</span></a>
+    <a href="tintuc.html">Tin Tức</a>
+    <a href="tapchi.html">Tạp Chí</a>
+  </div>
+  <div class="rt-trending-bar">
+    <span class="rt-trending-title">ĐANG THỊNH HÀNH</span>
+    <a href="#">Mặt Trời: Địa Đạo Trong Bóng Tối First Look</a>
+    <a href="#">Những Phim Hay Nhất Mọi Thời Đại</a>
+    <a href="#">Ký Ức Điện Ảnh Việt</a>
+    <div class="rt-trending-icons">
+      <a href="https://www.facebook.com/qa.13.03/"><img src="icons/facebook.svg" /></a>
+      <a href="#"><img src="icons/x.svg" /></a>
+      <a href="#"><img src="icons/instagram.svg" /></a>
+      <a href="#"><img src="icons/tiktok.svg" /></a>
+      <a href="#"><img src="icons/youtube.svg" /></a>
+      <a href="#"><img src="icons/threads.svg" /></a>
+    </div>
+  </div>
+</div>
+<div class="nfeed-filter-bar">
+  <input id="nfeed-search" type="text" placeholder="Tìm tiêu đề, tên tác giả...">
+  <button id="nfeed-search-btn">Tìm kiếm</button>
+  <div class="nfeed-categories">
+    <button class="nfeed-cat-btn active" data-cat="all">Tất cả</button>
+    <button class="nfeed-cat-btn" data-cat="tinmoi">Tin mới</button>
+    <button class="nfeed-cat-btn" data-cat="tinhot">Tin hot</button>
+    <button class="nfeed-cat-btn" data-cat="tg">Thế giới</button>
+    <button class="nfeed-cat-btn" data-cat="celeb">Người nổi tiếng</button>
+    <button class="nfeed-cat-btn" data-cat="vietnam">Việt nam</button>
+    <button class="nfeed-cat-btn" data-cat="phimanh">Phim ảnh</button>
+  </div>
+</div>
+<div id="nfeed-list"></div>
+<div id="nfeed-pagination"></div>
+<!-- Back to top -->
+ <!-- Nút Back to top dạng nổi giữa trên cùng -->
+<button id="backToTopBtn" title="Back to top">
+  <span style="font-size: 18px; vertical-align: top;">⟲</span>
+  <span style="vertical-align: top;">Trở Lại</span>
+</button>
+    <footer>
+      <div class = "footer">
+      <div class="footer-boxes">
+        <div class="footer-box">
+          <h3>Tham gia cộng đồng TumbleWeed ngay nha</h3>
+          <div class="social-icons">
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <a class href = "https://www.facebook.com/qa.13.03/"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+    
+        <div class="footer-box">
+          <div class="footer-box-text">
+          <h3>Donate cho mình ít coffee</h3>
+          <h4>Nguyễn Quang Anh</h4>
+          </div>
+          <div class="qr-code">
+            <img src="images/qr.jpg" alt="QR code" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-links">
+        <div class="footer-links-row">
+          <a href="#">Giúp đỡ</a>
+          <a href="#">Chính sách</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Cookies</a>
+          <a href="#">Quảng cáo</a>
+        </div>
+        <div class="footer-links-row">
+          <a href="#">Trang chủ</a>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Việc làm</a>
+          <a href="#">Thông cáo</a>
+          <a href="#">Nhà đầu tư</a>
+        </div>
+      </div>
+    
+      <p class="footer-note">Copyrights by Lao 3 Khổ 4 from 2025-2026 · © 2025 Tumbleweed,Inc.</p>
+      </div>
+    </footer>
+  <script src="shows.js"></script>
+  <script src="phim.js"></script>
+  <script src="admin.js"></script>
+  <script src="user.js"></script>
+  <script src="login.js"></script>
+  <script src="store.js"></script>
+  <script src="script.js"></script>
+  <script src="tintuc.js"></script>
+  <script src="darkmode.js"></script>
+</body>
+</html>

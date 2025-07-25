@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Shows</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="rt-header">
+  <div class="rt-header-main">
+    <div class="rt-header-left">
+      <a href ="index.html">
+      <img src="images/logo1.svg" alt="Rotten Tomatoes" class="rt-logo" />
+      </a>
+    </div>
+    <div class="rt-header-search">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Tìm Kiếm" />
+      <i class="fa fa-times rt-search-clear"></i>
+    </div>
+    <div class="rt-header-links">
+      <a href="#">About Us<sup> ©</sup></a>
+      <button id="dark-mode-toggle" class="darkmode-btn" title="Chuyển Dark mode">
+        <span class="darkmode-icon">🌙</span>
+        </button>
+      <span id="user-menu-area"></span>
+    </div>
+  </div>
+  <div class="rt-header-menu">
+    <a href="phim.html">Phim</a>
+    <a href="shows.html">TV SHOWS</a>
+    <a href="store.html">CỬA HÀNG <span class="rt-menu-new">NEW</span></a>
+    <a href="tintuc.html">Tin Tức</a>
+    <a href="tapchi.html">Tạp Chí</a>
+  </div>
+  <div class="rt-trending-bar">
+    <span class="rt-trending-title">ĐANG THỊNH HÀNH</span>
+    <a href="#">Mặt Trời: Địa Đạo Trong Bóng Tối First Look</a>
+    <a href="#">Những Phim Hay Nhất Mọi Thời Đại</a>
+    <a href="#">Ký Ức Điện Ảnh Việt</a>
+    <div class="rt-trending-icons">
+      <a href="https://www.facebook.com/qa.13.03/"><img src="icons/facebook.svg" /></a>
+      <a href="#"><img src="icons/x.svg" /></a>
+      <a href="#"><img src="icons/instagram.svg" /></a>
+      <a href="#"><img src="icons/tiktok.svg" /></a>
+      <a href="#"><img src="icons/youtube.svg" /></a>
+      <a href="#"><img src="icons/threads.svg" /></a>
+    </div>
+  </div>
+</div>
+<main class="magazine-list">
+  <h1>Danh Sách Tạp Chí</h1>
+  <section class="magazine-block">
+    <div class="magazine-info">
+      <h2>Vogue Vietnam</h2>
+      <div class="magazine-meta">2024 · Việt Nam</div>
+    </div>
+    <div class="magazine-slider" data-magazine="vogue-vietnam">
+      <button class="prev-btn" aria-label="Trước">
+        <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+        </button>
+      <div class="slider-images">
+        <img src="images/tc/tc11.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc12.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc13.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc14.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc15.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc16.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc17.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc18.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc19.webp" alt="Vogue Vietnam 2024">
+        <img src="images/tc/tc20.jpg" alt="Vogue Vietnam 2024">
+      </div>
+      <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+    </div>
+  </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>TIME Magazine</h2>
+        <div class="magazine-meta">2023 · USA</div>
+      </div>
+      <div class="magazine-slider" data-magazine="time-usa">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc1.webp" alt="TIME USA 2023" class="active">
+          <img src="images/tc/tc2.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc3.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc4.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc5.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc6.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc7.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc8.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc9.webp" alt="TIME USA 2023">
+          <img src="images/tc/tc10.webp" alt="TIME USA 2023">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>Elle Korea</h2>
+        <div class="magazine-meta">2022 · Hàn Quốc</div>
+      </div>
+      <div class="magazine-slider" data-magazine="elle-korea">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc21.jpg" alt="Elle Korea 2022" class="active">
+          <img src="images/tc/tc22.jpg" alt="Elle Korea 2022">
+          <img src="images/tc/tc23.jpg" alt="Elle Korea 2022">
+          <img src="images/tc/tc24.jpg" alt="Elle Korea 2022">
+          <img src="images/tc/tc25.jpg" alt="Elle Korea 2022">
+          <img src="images/tc/tc26.jpg" alt="Elle Korea 2022">
+          <img src="images/tc/tc27.jpg" alt="Elle Korea 2022">
+          <img src="images/tc/tc28.jpg" alt="Elle Korea 2022">
+          <img src="images/tc/tc29.webp" alt="Elle Korea 2022">
+          <img src="images/tc/tc30.png" alt="Elle Korea 2022">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>Harper's Bazaar UK</h2>
+        <div class="magazine-meta">2023 · Anh Quốc</div>
+      </div>
+      <div class="magazine-slider" data-magazine="bazaar-uk">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc31.jpg" alt="Bazaar UK 2023" class="active">
+          <img src="images/tc/tc32.jpg" alt="Bazaar UK 2023">
+          <img src="images/tc/tc33.webp" alt="Bazaar UK 2023">
+          <img src="images/tc/tc34.jpg" alt="Bazaar UK 2023">
+          <img src="images/tc/tc35.jpg" alt="Bazaar UK 2023">
+          <img src="images/tc/tc36.jpeg" alt="Bazaar UK 2023">
+          <img src="images/tc/tc37.jpg" alt="Bazaar UK 2023">
+          <img src="images/tc/tc38.webp" alt="Bazaar UK 2023">
+          <img src="images/tc/tc39.jpg" alt="Bazaar UK 2023">
+          <img src="images/tc/tc40.webp" alt="Bazaar UK 2023">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>Marie Claire France</h2>
+        <div class="magazine-meta">2024 · Pháp</div>
+      </div>
+      <div class="magazine-slider" data-magazine="marieclaire-fr">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc41.jpg" alt="Marie Claire France 2024" class="active">
+          <img src="images/tc/tc42.jpg" alt="Marie Claire France 2024">
+          <img src="images/tc/tc43.jpg" alt="Marie Claire France 2024">
+          <img src="images/tc/tc44.jpg" alt="Marie Claire France 2024">
+          <img src="images/tc/tc45.jpg" alt="Marie Claire France 2024">
+          <img src="images/tc/tc46.jpg" alt="Marie Claire France 2024">
+          <img src="images/tc/tc47.jpg" alt="Marie Claire France 2024">
+          <img src="images/tc/tc48.webp" alt="Marie Claire France 2024">
+          <img src="images/tc/tc49.jpg" alt="Marie Claire France 2024">
+          <img src="images/tc/tc50.jpg" alt="Marie Claire France 2024">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>GQ Japan</h2>
+        <div class="magazine-meta">2023 · Nhật Bản</div>
+      </div>
+      <div class="magazine-slider" data-magazine="gq-japan">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc51.jpg" alt="GQ Japan 2023" class="active">
+          <img src="images/tc/tc52.jpg" alt="GQ Japan 2023">
+          <img src="images/tc/tc53.webp" alt="GQ Japan 2023">
+          <img src="images/tc/tc54.jpg" alt="GQ Japan 2023">
+          <img src="images/tc/tc55.webp" alt="GQ Japan 2023">
+          <img src="images/tc/tc56.jpg" alt="GQ Japan 2023">
+          <img src="images/tc/tc57.jpg" alt="GQ Japan 2023">
+          <img src="images/tc/tc58.jpg_large" alt="GQ Japan 2023">
+          <img src="images/tc/tc59.webp" alt="GQ Japan 2023">
+          <img src="images/tc/tc60.jpg" alt="GQ Japan 2023">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>Cosmopolitan China</h2>
+        <div class="magazine-meta">2022 · Trung Quốc</div>
+      </div>
+      <div class="magazine-slider" data-magazine="cosmo-cn">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc61.jpg" alt="Cosmopolitan China 2022" class="active">
+          <img src="images/tc/tc62.jpg" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc63.jpg" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc64.jpg" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc65.jpeg" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc66.jpg" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc67.webp" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc68.jpg_large" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc69.jpg" alt="Cosmopolitan China 2022">
+          <img src="images/tc/tc70.jpeg" alt="Cosmopolitan China 2022">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>Vanity Fair Italia</h2>
+        <div class="magazine-meta">2023 · Ý</div>
+      </div>
+      <div class="magazine-slider" data-magazine="vanityfair-it">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc71.jpg" alt="Vanity Fair Italia 2023" class="active">
+          <img src="images/tc/tc72.jpg" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc73.jpg" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc74.jpg" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc75.jpg" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc76.jpg" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc77.webp" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc78.jpg" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc79.jpg" alt="Vanity Fair Italia 2023">
+          <img src="images/tc/tc80.jpg" alt="Vanity Fair Italia 2023">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <section class="magazine-block">
+      <div class="magazine-info">
+        <h2>Esquire Spain</h2>
+        <div class="magazine-meta">2022 · Tây Ban Nha</div>
+      </div>
+      <div class="magazine-slider" data-magazine="esquire-es">
+        <button class="prev-btn" aria-label="Trước">
+  <svg viewBox="0 0 24 24"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+        <div class="slider-images">
+          <img src="images/tc/tc81.jpg" alt="Esquire Spain 2022" class="active">
+          <img src="images/tc/tc82.jpg" alt="Esquire Spain 2022">
+          <img src="images/tc/tc83.jpg" alt="Esquire Spain 2022">
+          <img src="images/tc/tc84.jpg" alt="Esquire Spain 2022">
+          <img src="images/tc/tc85.jpg" alt="Esquire Spain 2022">
+          <img src="images/tc/tc86.jpeg" alt="Esquire Spain 2022">
+          <img src="images/tc/tc87.webp" alt="Esquire Spain 2022">
+          <img src="images/tc/tc88.jpg" alt="Esquire Spain 2022">
+          <img src="images/tc/tc89.jpg" alt="Esquire Spain 2022">
+          <img src="images/tc/tc90.jpg" alt="Esquire Spain 2022">
+        </div>
+        <button class="next-btn" aria-label="Sau">
+  <svg viewBox="0 0 24 24" style="transform: scaleX(-1);"><path d="M15.5 19.09 9.41 13a2 2 0 0 1 0-2.83l6.09-6.09a1 1 0 1 1 1.41 1.41L11.24 12l5.66 5.67a1 1 0 0 1-1.41 1.42z"/></svg>
+</button>
+      </div>
+    </section>
+
+    <!-- Thêm các bộ tạp chí khác tương tự -->
+  </main>
+  <!-- Back to top -->
+ <!-- Nút Back to top dạng nổi giữa trên cùng -->
+<button id="backToTopBtn" title="Back to top">
+  <span style="font-size: 18px; vertical-align: top;">⟲</span>
+  <span style="vertical-align: top;">Trở Lại</span>
+</button>
+    <footer>
+      <div class = "footer">
+      <div class="footer-boxes">
+        <div class="footer-box">
+          <h3>Tham gia cộng đồng TumbleWeed ngay nha</h3>
+          <div class="social-icons">
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <a class href = "https://www.facebook.com/qa.13.03/"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+    
+        <div class="footer-box">
+          <div class="footer-box-text">
+          <h3>Donate cho mình ít coffee</h3>
+          <h4>Nguyễn Quang Anh</h4>
+          </div>
+          <div class="qr-code">
+            <img src="images/qr.jpg" alt="QR code" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-links">
+        <div class="footer-links-row">
+          <a href="#">Giúp đỡ</a>
+          <a href="#">Chính sách</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Cookies</a>
+          <a href="#">Quảng cáo</a>
+        </div>
+        <div class="footer-links-row">
+          <a href="#">Trang chủ</a>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Việc làm</a>
+          <a href="#">Thông cáo</a>
+          <a href="#">Nhà đầu tư</a>
+        </div>
+      </div>
+    
+      <p class="footer-note">Copyrights by Lao 3 Khổ 4 from 2025-2026 · © 2025 Tumbleweed,Inc.</p>
+      </div>
+    </footer>
+  <script src="shows.js"></script>
+  <script src="phim.js"></script>
+  <script src="admin.js"></script>
+  <script src="user.js"></script>
+  <script src="login.js"></script>
+  <script src="store.js"></script>
+  <script src="script.js"></script>
+  <script src="tintuc.js"></script>
+  <script src="darkmode.js"></script>
+  <script src="tapchi.js"></script>
+</body>
+</html>

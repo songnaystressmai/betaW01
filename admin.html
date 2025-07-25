@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản Lý Hệ Thống - Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tumbleweed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="rt-header">
+  <div class="rt-header-main">
+    <div class="rt-header-left">
+      <a href ="index.html">
+      <img src="images/logo1.svg" alt="Rotten Tomatoes" class="rt-logo" />
+      </a>
+    </div>
+    <div class="rt-header-search">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Tìm Kiếm" />
+      <i class="fa fa-times rt-search-clear"></i>
+    </div>
+    <div class="rt-header-links">
+      <a href="#">About Us<sup> ©</sup></a>
+      <button id="dark-mode-toggle" class="darkmode-btn" title="Chuyển Dark mode">
+        <span class="darkmode-icon">🌙</span>
+        </button>
+      <span id="user-menu-area"></span>
+    </div>
+  </div>
+  <div class="rt-header-menu">
+    <a href="phim.html">Phim</a>
+    <a href="shows.html">TV SHOWS</a>
+    <a href="store.html">CỬA HÀNG <span class="rt-menu-new">NEW</span></a>
+    <a href="tintuc.html">Tin Tức</a>
+    <a href="#">Tạp Chí</a>
+  </div>
+  <div class="rt-trending-bar">
+    <span class="rt-trending-title">ĐANG THỊNH HÀNH</span>
+    <a href="#">Mặt Trời: Địa Đạo Trong Bóng Tối First Look</a>
+    <a href="#">Những Phim Hay Nhất Mọi Thời Đại</a>
+    <a href="#">Ký Ức Điện Ảnh Việt</a>
+    <div class="rt-trending-icons">
+      <a href="#"><img src="icons/facebook.svg" /></a>
+      <a href="#"><img src="icons/x.svg" /></a>
+      <a href="#"><img src="icons/instagram.svg" /></a>
+      <a href="#"><img src="icons/tiktok.svg" /></a>
+      <a href="#"><img src="icons/youtube.svg" /></a>
+      <a href="#"><img src="icons/threads.svg" /></a>
+    </div>
+  </div>
+</div>
+  <div class="admin-header">
+    <h1>Trang Quản Lý Hệ Thống</h1>
+    <button id="logout-admin">Đăng xuất</button>
+  </div>
+  <div class="admin-tabs">
+    <button class="admin-tab active" data-tab="users">Quản lý người dùng</button>
+    <button class="admin-tab" data-tab="pending-orders">Đơn chờ xử lý</button>
+    <button class="admin-tab" data-tab="done-orders">Đơn đã xử lý</button>
+    <button class="admin-tab" data-tab="products">Sản phẩm</button>
+    <button class="admin-tab" data-tab="activities">Hoạt động người dùng</button>
+    <button class="admin-tab" data-tab="stat">Thống kê truy cập</button>
+  </div>
+
+  <!-- Quản lý người dùng -->
+  <div class="admin-panel active" id="panel-users">
+    <h2>Quản lý người dùng</h2>
+    <table class="admin-table" id="user-table">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Họ tên</th>
+          <th>Quyền</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Đơn hàng chờ xử lý -->
+  <div class="admin-panel" id="panel-pending-orders">
+    <h2>Đơn hàng chờ xử lý</h2>
+    <table class="admin-table" id="pending-orders-table">
+      <thead>
+        <tr>
+          <th>Tài khoản</th>
+          <th>Sản phẩm</th>
+          <th>Số lượng</th>
+          <th>Ngày đặt</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Đơn hàng đã xử lý -->
+  <div class="admin-panel" id="panel-done-orders">
+    <h2>Đơn hàng đã xử lý</h2>
+    <table class="admin-table" id="done-orders-table">
+      <thead>
+        <tr>
+          <th>Tài khoản</th>
+          <th>Sản phẩm</th>
+          <th>Số lượng</th>
+          <th>Ngày đặt</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Sản phẩm -->
+  <div class="admin-panel" id="panel-products">
+    <h2>Quản lý sản phẩm</h2>
+    <form id="add-product-form" class="add-product-form">
+      <input type="text" id="prod-name" placeholder="Tên sản phẩm" required>
+      <input type="text" id="prod-cat" placeholder="Danh mục" required>
+      <input type="number" id="prod-qty" placeholder="Số lượng" min="1" required>
+      <input type="number" id="prod-price" placeholder="Giá" min="1" required>
+      <input type="file" id="prod-img" accept="image/*" required>
+      <button type="submit">Thêm sản phẩm</button>
+      <span id="add-prod-msg"></span>
+    </form>
+    <table class="admin-table" id="product-table">
+      <thead>
+        <tr>
+          <th>Ảnh</th>
+          <th>Tên sản phẩm</th>
+          <th>Danh mục</th>
+          <th>Số lượng</th>
+          <th>Giá</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Hoạt động người dùng -->
+  <div class="admin-panel" id="panel-activities">
+    <h2>Hoạt động người dùng</h2>
+    <div id="user-activities"></div>
+  </div>
+
+  <!-- Thống kê truy cập -->
+  <div class="admin-panel" id="panel-stat">
+    <h2>Biểu đồ thống kê lượt truy cập</h2>
+    <canvas id="loginChart" width="700" height="350"></canvas>
+  </div>
+
+  <script src="admin.js"></script>
+  <script src="script.js"></script>
+  <script src="user.js"></script>
+    <script src="login.js"></script>
+    <script src="store.js"></script>
+    <script src="phim.js"></script>
+    <script src="shows.js"></script>
+    <script src="darkmode.js"></script>
+
+
+  <!-- Back to top -->
+ <!-- Nút Back to top dạng nổi giữa trên cùng -->
+<button id="backToTopBtn" title="Back to top">
+  <span style="font-size: 18px; vertical-align: top;">⟲</span>
+  <span style="vertical-align: top;">Trở Lại</span>
+</button>
+    <footer>
+      <div class = "footer">
+      <div class="footer-boxes">
+        <div class="footer-box">
+          <h3>Tham gia cộng đồng TumbleWeed ngay nha</h3>
+          <div class="social-icons">
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <a class href = "https://www.facebook.com/qa.13.03/"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+    
+        <div class="footer-box">
+          <div class="footer-box-text">
+          <h3>Donate cho mình ít coffee</h3>
+          <h4>Nguyễn Quang Anh</h4>
+          </div>
+          <div class="qr-code">
+            <img src="images/qr.jpg" alt="QR code" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-links">
+        <div class="footer-links-row">
+          <a href="#">Giúp đỡ</a>
+          <a href="#">Chính sách</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Cookies</a>
+          <a href="#">Quảng cáo</a>
+        </div>
+        <div class="footer-links-row">
+          <a href="#">Trang chủ</a>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Việc làm</a>
+          <a href="#">Thông cáo</a>
+          <a href="#">Nhà đầu tư</a>
+        </div>
+      </div>
+    
+      <p class="footer-note">Copyrights by Lao 3 Khổ 4 from 2025-2026 · © 2025 Tumbleweed,Inc.</p>
+      </div>
+    </footer>
+</body>
+</html>

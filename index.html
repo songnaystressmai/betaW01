@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tumbleweed</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo1.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+  <div class="rt-header">
+  <div class="rt-header-main">
+    <div class="rt-header-left">
+      <a href ="index.html">
+      <img src="images/logo1.svg" alt="Rotten Tomatoes" class="rt-logo" />
+      </a>
+    </div>
+    <div class="rt-header-search">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Tìm Kiếm" />
+      <i class="fa fa-times rt-search-clear"></i>
+    </div>
+    <div class="rt-header-links">
+      <a href="#">About Us<sup> ©</sup></a>
+      <button id="dark-mode-toggle" class="darkmode-btn" title="Chuyển Dark mode">
+        <span class="darkmode-icon">🌙</span>
+        </button>
+      <span id="user-menu-area"></span>
+    </div>
+  </div>
+  <div class="rt-header-menu">
+    <a href="phim.html">Phim</a>
+    <a href="shows.html">TV SHOWS</a>
+    <a href="store.html">CỬA HÀNG <span class="rt-menu-new">NEW</span></a>
+    <a href="tintuc.html">Tin Tức</a>
+    <a href="tapchi.html">Tạp Chí</a>
+  </div>
+  <div class="rt-trending-bar">
+    <span class="rt-trending-title">ĐANG THỊNH HÀNH</span>
+    <a href="#">Mặt Trời: Địa Đạo Trong Bóng Tối First Look</a>
+    <a href="#">Những Phim Hay Nhất Mọi Thời Đại</a>
+    <a href="#">Ký Ức Điện Ảnh Việt</a>
+    <div class="rt-trending-icons">
+      <a href="https://www.facebook.com/qa.13.03/"><img src="icons/facebook.svg" /></a>
+      <a href="#"><img src="icons/x.svg" /></a>
+      <a href="#"><img src="icons/instagram.svg" /></a>
+      <a href="#"><img src="icons/tiktok.svg" /></a>
+      <a href="#"><img src="icons/youtube.svg" /></a>
+      <a href="#"><img src="icons/threads.svg" /></a>
+    </div>
+  </div>
+</div>
+
+  <!-- Highlight zone -->
+  <section class="highlight-wrapper">
+    <!-- Trái -->
+  <div class="left-slider slider-wrapper">
+    <img id="leftPoster1" class="slide-img active" src="images/slide đầu/slide1.jpg" />
+    <img id="leftPoster2" class="slide-img" src="" />
+    <div class="nav-btns-abs left">
+      <button onclick="switchLeftPoster(-1)">‹</button>
+    </div>
+    <div class="nav-btns-abs right">
+      <button onclick="switchLeftPoster(1)">›</button>
+    </div>
+  </div>
+
+  <!-- Phải -->
+  <div class="right-block">
+    <div class="main-slide-container slider-wrapper">
+      <img id="mainSlideImg1" class="slide-img active" src="images/slide đầu/slide4.jpg" />
+      <img id="mainSlideImg2" class="slide-img" src="" />
+      <div class="nav-btns-abs left">
+        <button onclick="switchMainSlide(-1)">‹</button>
+      </div>
+      <div class="nav-btns-abs right">
+        <button onclick="switchMainSlide(1)">›</button>
+      </div>
+    </div>
+    <div class="poster-pair">
+      <div class="poster-item">
+        <img src="images/slide đầu/slide9.webp" />
+        <a href="#">
+          <div class="caption">Atony Starks, người thủ vai nhân vật HomeLander đình đám trong The Boys...</div>
+        </a>
+      </div>
+      <div class="poster-item">
+        <img src="images/slide đầu/slide8.jpg" />
+        <a href="#">
+          <div class="caption">Flow trở thành phim hoạt hình xuất sắc nhất năm 2024.....</div>
+        </a>
+      </div>
+    </div>
+  </div>
+    <!-- Up next section -->
+  <aside class="upnext-section">
+  <h2>Tiếp Theo</h2>
+  <ul id="upnext-list">
+    <li class="upnext-item">
+      <div class="upnext-thumb">
+        <img src="images/upnext/un2.jpg" alt="Ngôi sao võ thuật Thành Luân">
+      </div>
+      <div class="upnext-info">
+        <a href="#" class="upnext-title">
+          <h3>🔥Cáo buộc ngôi sao võ thuật Hắc Long nghi tàng trữ ma túy</h3>
+        </a>
+        <p>Tin Tức</p>
+        <div class="upnext-stats">
+          <span class="icon-btn" title="Like">👍 74k</span>
+          <span class="icon-btn" title="Love">💗 87k</span> 
+        </div>
+      </div>
+    </li>
+    <li class="upnext-item">
+      <div class="upnext-thumb">
+        <img src="images/upnext/un1.webp" alt='"Nobody'>
+        <span class="upnext-duration">2:25</span>
+      </div>
+      <div class="upnext-info">
+        <a href="#" class="upnext-title">
+          <h3>Nobody 2 tung Trailers đầu tiên</h3>
+        </a>
+        <p>Trailers And Videos</p>
+        <div class="upnext-stats">
+          <span class="icon-btn" title="Like">👍 124k</span> 
+          <span class="icon-btn" title="Love">💗 98k</span> 
+        </div>
+      </div>
+    </li>
+    <li class="upnext-item">
+      <div class="upnext-thumb">
+        <img src="images/upnext/un3.webp" alt='"JurrasicWorld'>
+        <span class="upnext-duration">1:12</span>
+      </div>
+      <div class="upnext-info">
+        <a href="#" class="upnext-title">
+          <h3>Loài Khủng Long Mới Trong Jurrasic World : Rebirth</h3>
+        </a>
+        <p>Teaser</p>
+        <div class="upnext-stats">
+          <span class="icon-btn" title="Like">👍 169k</span>
+          <span class="icon-btn" title="Love">💗 102k</span> 
+        </div>
+      </div>
+    </li>
+  </ul>
+  <a href="#" class="browse-link">More trailers &gt;</a>
+</aside>
+  </section>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <section class="celeb-section">
+      <h2>|Những Ngôi Sao Đang Lên</h2>
+      <div class="celeb-slider">
+        <button class="nav-btns-abs left" onclick="slideCeleb(-1)">‹</button>
+        <div class="celeb-track">
+          <div class="celeb-item">
+            <img src="images/celeb/celeb1.webp" alt="Celeb 1">
+            <p>Pedro Pascal</p>
+            <p>50 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb2.webp" alt="Celeb 2">
+            <p>Ryan Gosling</p>
+            <p>44 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb7.webp" alt="Celeb 3">
+            <p>Robert Downey JR</p>
+            <p>60 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb4.jpg" alt="Celeb 4">
+            <p>Ryan Coogler</p>
+            <p>38 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb5.jpg" alt="Celeb 5">
+            <p>Anna De Armas</p>
+            <p>37 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb6.jpg" alt="Celeb 6">
+            <p>Ben Affleck</p>
+            <p>52 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb8.webp" alt="Celeb 7">
+            <p>Jenna Ortega</p>
+            <p>22 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb9.avif" alt="Celeb 8">
+            <p>Emma Myers</p>
+            <p>23 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb10.webp" alt="Celeb 9">
+            <p>Rachel Zegler</p>
+            <p>23 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb11.webp" alt="Celeb 10">
+            <p>Bella Ramsey</p>
+            <p>21 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb12.jpg" alt="Celeb 11">
+            <p>William H Macy</p>
+            <p>75 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb13.jpg" alt="Celeb 12">
+            <p>Jeremy Allen White</p>
+            <p>34 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb14.jpg" alt="Celeb 13">
+            <p>Jack Black</p>
+            <p>55 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb15.png" alt="Celeb 14">
+            <p>Tom Holland</p>
+            <p>28 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb16.jpg" alt="Celeb 15">
+            <p>Emma Stone</p>
+            <p>36 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb17.webp" alt="Celeb 16">
+            <p>Jack Quaid</p>
+            <p>33 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb18.jpg" alt="Celeb 17">
+            <p>Quan Ke Huy</p>
+            <p>53 yrs</p>
+          </div>
+          <div class="celeb-item">
+            <img src="images/celeb/celeb20.jpg" alt="Celeb 18">
+            <p>Peter Hắc Long</p>
+            <p>19 yrs</p>
+          </div>
+        </div>
+        <button class="nav-btns-abs right" onclick="slideCeleb(1)">›</button>
+        </div>
+        <div class="more-recommend">
+          <a href="javascript:void(0)">Nhiều hơn &gt;</a>
+        </div>
+    </section>
+    <section class="featured-section">
+      <h2>|Đề Xuất Hôm Nay</h2>
+      <button class="featured-nav left" onclick="moveFeatured(-1)">&#10094;</button>
+      <div class="featured-wrapper">
+        <div class="featured-list">
+          <div class="featured-item">
+            <img src="images/đề xuất/sot1.jpg" alt="Movie 1">
+            <div class="featured-tag">
+              <i class="fa fa-image"></i> Photos
+            </div> 
+            <div class="featured-caption">
+              <div class="featured-title">Những Shoot hình đẹp như tranh vẽ trong Little Woman 2018</div>
+              <a href="#" class="featured-link">Bộ Sưu Tập</a>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="images/đề xuất/sot2.jpg" alt="Movie 2">
+            <div class="featured-tag">
+              <i class="fa fa-newspaper"></i> Tin Tức
+            </div> 
+            <div class="featured-caption">
+              <div class="featured-title">Captain America IV: Đột phá hay lối mòn?</div>
+              <a href="#" class="featured-link">Ra rạp thui các fan !</a>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="images/đề xuất/sot3.jpg" alt="Movie 3">
+            <div class="featured-tag">
+              <i class="fa fa-video"></i> Video
+            </div> 
+            <div class="featured-caption">
+              <div class="featured-title">Thám tử Kiên: Hi vọng mới cho điện ảnh Việt Nam?</div>
+              <a href="#" class="featured-link">Đặt vé đi nha</a>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="images/đề xuất/sot4.jpg" alt="Movie 4">
+            <div class="featured-tag">
+              <i class="fa fa-newspaper"></i> Tin Tức
+            </div> 
+            <div class="featured-caption">
+              <div class="featured-title">Những Eater Eggs có thể bạn đã bỏ lỡ trong The Boy And The Heron</div>
+              <a href="#" class="featured-link">Săm Soi</a>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="images/đề xuất/sot5.jpg_large" alt="Movie 5">
+            <div class="featured-tag">
+              <i class="fa fa-film"></i> Phân Tích
+            </div> 
+            <div class="featured-caption">
+              <div class="featured-title">Điều gì đã thực sự xảy ra trong Parasite</div>
+              <a href="#" class="featured-link">Phân Tích</a>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="images/đề xuất/sot6.webp" alt="Movie 6">
+            <div class="featured-tag">
+              <i class="fa fa-thumbs-up"></i> Lựa Chọn Của Biên Tập Viên
+            </div> 
+            <div class="featured-caption">
+              <div class="featured-title">Chuyện tình vắt chanh vào mắt trong Khi Cuộc Đời Cho Bạn Quả Quýt</div>
+              <a href="#" class="featured-link">Lựa chọn của người hâm mộ</a>
+            </div>
+          </div>
+          <div class="featured-item">
+            <img src="images/đề xuất/sot7.jpg" alt="Movie 7">
+            <div class="featured-tag">
+              <i class="fa fa-film"></i> Phân Tích
+            </div> 
+            <div class="featured-caption">
+              <div class="featured-title">Better Call Saul đã mượn hình ảnh để kể chuyện xuất sắc thế nào?</div>
+              <a href="#" class="featured-link">Xếp Hạng 1 Ưa Thích</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="featured-nav right" onclick="moveFeatured(1)">&#10095;</button>
+    </section>
+    <section class="boxoffice-section">
+      <h2><span class="icon"><i class="fas fa-ticket-alt"></i></span> Phòng Vé Tuần Này</h2>
+      <p class="weekend">Tuần 1 Tháng 5 2025</p>
+      <div class="boxoffice-list">
+        <div class="boxoffice-item">
+          <span class="rank">1|</span>
+          <span class="icon"><i class="fas fa-film"></i></span>
+          <span class="movie-title">Mai</span>
+          <span class="gross">$100B</span>
+        </div>
+        <div class="boxoffice-item">
+          <span class="rank">2|</span>
+          <span class="icon"><i class="fas fa-film"></i></span> 
+          <span class="movie-title">A Minecraft Movie</span>
+          <span class="gross">$223M</span>
+        </div>
+        <div class="boxoffice-item">
+          <span class="rank">3|</span>
+          <span class="icon"><i class="fas fa-film"></i></span>
+          <span class="movie-title">The Wild Robot</span>
+          <span class="gross">$162M</span>
+        </div>
+        <div class="boxoffice-item">
+          <span class="rank">4|</span>
+          <span class="icon"><i class="fas fa-film"></i></span>
+          <span class="movie-title">Biệt Đội Sấm Sét</span>
+          <span class="gross">$156M</span>
+        </div>
+        <div class="boxoffice-item">
+          <span class="rank">5|</span>
+          <span class="icon"><i class="fas fa-film"></i></span>
+          <span class="movie-title">Super Mario Bros Movie</span>
+          <span class="gross">$92M</span>
+        </div>
+        <div class="boxoffice-item">
+          <span class="rank">6|</span>
+          <span class="icon"><i class="fas fa-film"></i></span>
+          <span class="movie-title">Mật Nghị</span>
+          <span class="gross">$67M</span>
+        </div>
+      </div>
+    </section>
+    <section class="watchlist-full">
+  <h2 class="watchlist-header">
+    <span class="highlight-line"></span>
+    <span class="watchlist-title">From your Watchlist</span>
+  </h2>
+  <div class="watchlist-carousel-wrap">
+    <button class="carousel-btn left" id="carousel-left" aria-label="Trước"><i class="fa fa-chevron-left"></i></button>
+    <div class="watchlist-carousel" id="watchlist-list"></div>
+    <button class="carousel-btn right" id="carousel-right" aria-label="Sau"><i class="fa fa-chevron-right"></i></button>
+  </div>
+</section>
+    <section class="top10-section">
+      <h2>|Top 10 trên Tumbleweed tuần này</h2>
+    
+      <!-- Nút chuyển trái -->
+      <button class="top10-nav left" onclick="moveTop10(-1)">&#10094;</button>
+    
+      <div class="top10-list-wrapper">
+        <div class="top10-list">
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/slide đầu/slide1.jpg" alt="Movie 1">
+            <div class="top10-info">
+              <span class="rank">1.</span>
+              <span class="title">The Wild Robot</span>
+              <span class="rating">⭐ 9.5</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+    
+          <!-- COPY thêm 9 item nữa -->
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/slide đầu/slide2.jpg" alt="Movie 2">
+            <div class="top10-info">
+              <span class="rank">2.</span>
+              <span class="title">Killers Of The Flower Moon</span>
+              <span class="rating">⭐ 8.5</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net1.jpg" alt="Movie 3">
+            <div class="top10-info">
+              <span class="rank">3.</span>
+              <span class="title">Địa Đạo</span>
+              <span class="rating">⭐ 9.75</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net2.webp" alt="Movie 4">
+            <div class="top10-info">
+              <span class="rank">4.</span>
+              <span class="title">Cậu Bé Và Chim Diệc</span>
+              <span class="rating">⭐ 9.0</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net3.jpg" alt="Movie 5">
+            <div class="top10-info">
+              <span class="rank">5.</span>
+              <span class="title">ThunderBolts</span>
+              <span class="rating">⭐ 7.8</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net4.jpg" alt="Movie 6">
+            <div class="top10-info">
+              <span class="rank">6.</span>
+              <span class="title">A Minecraft Movie</span>
+              <span class="rating">⭐ 5.2</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net5.webp" alt="Movie 7">
+            <div class="top10-info">
+              <span class="rank">7.</span>
+              <span class="title">Bay Trên Tổ Chim Cúc Cu</span>
+              <span class="rating">⭐ 9.5</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net6.jpg" alt="Movie 8">
+            <div class="top10-info">
+              <span class="rank">8.</span>
+              <span class="title">Kẻ Thế Thân</span>
+              <span class="rating">⭐ 7.2</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net7.jpg" alt="Movie 9">
+            <div class="top10-info">
+              <span class="rank">9.</span>
+              <span class="title">Mickey 17</span>
+              <span class="rating">⭐ 6.4</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="top10-item">
+            <div class="badge-icon"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icon">🔖</div>
+            <img src="images/top 10/net100.jpg" alt="Movie 9">
+            <div class="top10-info">
+              <span class="rank">10.</span>
+              <span class="title">Dưới Sông Paris</span>
+              <span class="rating">⭐ 6.8</span>
+            </div>
+            <div class="top10-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+    
+          <!-- Thêm các poster khác ở đây -->
+    
+        </div>
+      </div>
+    
+      <!-- Nút chuyển phải -->
+      <button class="top10-nav right" onclick="moveTop10(1)">&#10095;</button>
+    </section>
+    <section class="fan-voted">
+      <h2>|Do người hâm mộ bình chọn</h2>
+    
+      <!-- Nút chuyển trái -->
+      <button class="fan-nav left" onclick="movefan(-1)">&#10094;</button>
+    
+      <div class="fan-list-wrapper">
+        <div class="fan-list">
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o1.webp" alt="Movie 1">
+            <div class="fan-info">
+              <span class="rank">1.</span>
+              <span class="title">El Camino</span>
+              <span class="rating">⭐ 10</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+    
+          <!-- COPY thêm 9 item nữa -->
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o2.jpg" alt="Movie 2">
+            <div class="fan-info">
+              <span class="rank">2.</span>
+              <span class="title">Companion</span>
+              <span class="rating">⭐ 6.1</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o3.webp" alt="Movie 3">
+            <div class="fan-info">
+              <span class="rank">3.</span>
+              <span class="title">Người Sói</span>
+              <span class="rating">⭐ 8.4</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o4.jpg" alt="Movie 4">
+            <div class="fan-info">
+              <span class="rank">4.</span>
+              <span class="title">Bà Kẹ Ballerina</span>
+              <span class="rating">⭐ 9.0</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o5.jpg" alt="Movie 5">
+            <div class="fan-info">
+              <span class="rank">5.</span>
+              <span class="title">Siêu Nhân</span>
+              <span class="rating">⭐ 9.6</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o6.jpg" alt="Movie 6">
+            <div class="fan-info">
+              <span class="rank">6.</span>
+              <span class="title">Ngược Dòng Đời</span>
+              <span class="rating">⭐ 8.2</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o7.webp" alt="Movie 7">
+            <div class="fan-info">
+              <span class="rank">7.</span>
+              <span class="title">MAXXINE</span>
+              <span class="rating">⭐ 9.3</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o8.webp" alt="Movie 8">
+            <div class="fan-info">
+              <span class="rank">8.</span>
+              <span class="title">Mai</span>
+              <span class="rating">⭐ 5.5</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o9.webp" alt="Movie 9">
+            <div class="fan-info">
+              <span class="rank">9.</span>
+              <span class="title">Những Người Bạn Tưởng Tượng</span>
+              <span class="rating">⭐ 7.9</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="fan-item">
+            <div class="badge-icos"><i class="fa fa-bookmark"></i></div>
+            <div class="bookmark-icos">🔖</div>
+            <img src="images/fan/o10.jpg" alt="Movie 9">
+            <div class="fan-info">
+              <span class="rank">10.</span>
+              <span class="title">Paddington: Gấu Thủ Chu Du</span>
+              <span class="rating">⭐ 8.3</span>
+            </div>
+            <div class="fan-buttons">
+              <button>+ Watchlist</button>
+              <button>Trailer</button>
+            </div>
+          </div>
+    
+          <!-- Thêm các poster khác ở đây -->
+    
+        </div>
+      </div>
+    
+      <!-- Nút chuyển phải -->
+      <button class="fan-nav right" onclick="movefan(1)">&#10095;</button>
+    </section>
+    <section class="popular-interests">
+      <h2><i class="fa-solid fa-tv"></i> Truyền thông đại chúng</h2>
+    
+      <div class="pi-slider-wrapper">
+        <button class="pi-nav-button pi-left" onclick="piScrollLeft()">&#10094;</button>
+    
+        <div class="pi-scroll-container" id="pi-scroll-container">
+          <div class="pi-card">
+            <img src="images/theloai/kkk1.webp" alt="Horror" />
+            <p>Kinh Dị</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk2.webp" alt="Comedy" />
+            <p>Hài Hước</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk3.jpg" alt="Action" />
+            <p>Hành Động</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk4.jpg" alt="Animation" />
+            <p>Hoạt Hình</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk5.jpg" alt="Crime" />
+            <p>Tội Phạm</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk6.webp" alt="Drama" />
+            <p>Drama</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk7.jpg" alt="Family" />
+            <p>Gia Đình</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk8.webp" alt="Fiction" />
+            <p>Viễn Tưởng</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk9.jpg" alt="Thriller" />
+            <p>Giật Gân</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk10.jpg" alt="Adventure" />
+            <p>Phiêu Lưu</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk11.jpg" alt="Historical" />
+            <p>Sử Thi</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk12.jpg" alt="Dark Comedy" />
+            <p>Hài Kịch Đen</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk13.webp" alt="Musical" />
+            <p>Nhạc Kịch</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk14.jpg" alt="Sience" />
+            <p>Khoa Học Viễn Tưởng</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk15.jpeg" alt="Documentary" />
+            <p>Tài Liệu</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk16.webp" alt="Western" />
+            <p>Miền Viễn Tây</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk17.jpg" alt="Romance" />
+            <p>Lãng Mạn</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk18.jpg" alt="Anime" />
+            <p>Anime</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk19.jpg" alt="Detective" />
+            <p>Trinh Thám</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk20.jpg" alt="War" />
+            <p>Chiến Tranh</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk21.jpg" alt="Superhero" />
+            <p>Siêu Anh Hùng</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk22.webp" alt="Coming-of-age" />
+            <p>Thanh Thiếu Niên</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk23.jpg" alt="School" />
+            <p>Thanh Xuân Vườn Trường</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk24.jpg" alt="Psycho" />
+            <p>Tâm Lý</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk25.jpg" alt="Kungfu" />
+            <p>Võ Thuật</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk26.jpeg" alt="Sport" />
+            <p>Thể Thao</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk27.webp" alt="Cyberpunk" />
+            <p>Hậu Tận Thế</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk28.jpg" alt="Slice-of-life" />
+            <p>Slices Of Life</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk29.jpg" alt="Short" />
+            <p>Phim Ngắn</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk30.jpg" alt="Series" />
+            <p>Chương Trình Truyền Hình</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk31.avif" alt="Bio" />
+            <p>Tiểu Sử</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk32.jpg" alt="Zombie" />
+            <p>Xác Sống</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk33.jpg" alt="Disater" />
+            <p>Thảm Họa Thiên Nhiên</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk34.jpg" alt="Found Footage" />
+            <p>Found Footage</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk35.jpg" alt="Time Travel" />
+            <p>Du Hành Thời Gian</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk36.jpg" alt="Cooking" />
+            <p>Ẩm Thực</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk37.jpg" alt="Vietnam" />
+            <p>Việt Nam</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk38.jpg" alt="Space" />
+            <p>Vũ Trụ</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk39.jpg" alt="live-action" />
+            <p>Live Action</p>
+          </div>
+          <div class="pi-card">
+            <img src="images/theloai/kkk40.jpg" alt="education" />
+            <p>Giáo Dục</p>
+          </div>
+        </div>
+    
+        <button class="pi-nav-button pi-right" onclick="piScrollRight()">&#10095;</button>
+      </div>
+    </section>    
+    <section class="editor-choice-section">
+  <h2 class="editor-choice-title">
+  <i class="fas fa-pencil-alt" style="color:gold;"></i>
+   Lựa Chọn Của Biên Tập Viên
+  </h2>
+  <button class="editor-choice-nav left" onclick="moveEditorChoice(-1)">&#10094;</button>
+  <div class="editor-choice-wrapper">
+    <div class="editor-choice-list">
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest2.jpg" alt="Editor 1">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-video"></i> Trailers</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Lựa Chọn Của Chúng Tôi: Tháng Năm Này Xem Gì ?</div>
+          <a href="#" class="editor-choice-link">List Phim Rạp</a>
+        </div>
+      </div>
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest1.jpg" alt="Editor 2">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-clipboard-list"></i> List</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Đừng bỏ lỡ những bộ phim tội phạm này -_-</div>
+          <a href="#" class="editor-choice-link">Khám Phá Ngay</a>
+        </div>
+      </div>
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest4.jpg" alt="Editor 2">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-fire"></i> Here</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Hooray: Tháng Năm Trên Amazone tới đây</div>
+          <a href="#" class="editor-choice-link">Khám Phá Ngay</a>
+        </div>
+      </div>
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest5.jpg" alt="Editor 2">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-crown"></i> Best</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Những Show Hay Nhất 2024 Theo RottenTomatoes</div>
+          <a href="#" class="editor-choice-link">Đề Cử</a>
+        </div>
+      </div>
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest6.jpg" alt="Editor 2">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-hat-wizard"></i> Tuổi Thơ</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Disney Trở Lại Tuổi Thơ Tháng Năm Này</div>
+          <a href="#" class="editor-choice-link">Đặt Vé Ngay</a>
+        </div>
+      </div>
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest7.jpg" alt="Editor 2">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-laugh-squint"></i> hehe</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Cười Rụng Rốn Với Những Bộ Phim Hài Khó Đỡ Này :))</div>
+          <a href="#" class="editor-choice-link">Xem Đi Không Phí</a>
+        </div>
+      </div>
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest8.jpg" alt="Editor 2">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-hands-clapping"></i> Absoluted Cinema</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Những Bộ Phim Sẽ Thay Đổi Cuộc Đời Bạn</div>
+          <a href="#" class="editor-choice-link">Phải Xem Trước Khi Chết</a>
+        </div>
+      </div>
+      <div class="editor-choice-item">
+        <img src="images/banner btv/siketest3.jpg" alt="Editor 3">
+        <div class="editor-choice-tag"><i class="fas fa-award"></i> Editor's Choice</div>
+        <div class="editor-choice-tat"><i class="fas fa-star"></i> Hay Nha</div>
+        <div class="editor-choice-caption">
+          <div class="editor-choice-title">Tháng Năm Này Trên Netflix</div>
+          <a href="#" class="editor-choice-link">Đăng Ký Ngay !!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="editor-choice-nav right" onclick="moveEditorChoice(1)">&#10095;</button>
+</section>
+  <section class="upcoming-movies-section">
+  <!-- Nút prev/next ĐẶT NGAY TRONG SECTION, nhưng ngoài .upcoming-movie-row -->
+  <button class="upcoming-arrow upcoming-arrow-left hide" aria-label="Previous">&#8249;</button>
+  <div class="upcoming-header">
+    <h2>
+    <span class="coming-icon"><i class="fas fa-hourglass-half"></i></span>Coming Soon</h2>
+  </div>
+  <p class="upcoming-subtitle">Trailers và Videos</p>
+  <div class="upcoming-movie-row">
+    <!-- Movie Card 1 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost1.jpg" alt="Final Destination: Bloodlines">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">1:09</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">16 tháng 5 này</span>
+        <div class="upcoming-title">Lưỡi Hái Tử Thần: Huyết Thống</div>
+        <a href="#" class="upcoming-tickets-link">Gets Tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 89k</span>
+          <span class="upcoming-love">❤️ 49k</span>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card 2 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost2.jpg" alt="Mission Impossible">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">2:18</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">23 tháng 5 này</span>
+        <div class="upcoming-title">Nhiệm Vụ Bất Khả Thi: Nghiệp Báo Cuối Cùng</div>
+        <a href="#" class="upcoming-tickets-link">Get tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 72K</span>
+          <span class="upcoming-love">❤️ 66k</span>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card 3 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost3.jpg" alt="Moana: Live Action">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">1:08</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">Tháng 7 Này</span>
+        <div class="upcoming-title">Moana Live Action</div>
+        <a href="#" class="upcoming-tickets-link">Get tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 34K</span>
+          <span class="upcoming-love">❤️ 22k</span>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card 4 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost4.webp" alt="The Conjuring: Last Rites">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">2:24</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">Mùng 5 Tháng 9 Này</span>
+        <div class="upcoming-title">The Conjuring: Last Rites</div>
+        <a href="#" class="upcoming-tickets-link">Get tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 100K</span>
+          <span class="upcoming-love">❤️ 56k</span>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card 5 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost5.jpg" alt="Zootopia 2">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">2:21</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">23 Tháng 11 Này</span>
+        <div class="upcoming-title">Phi Vụ Động Trời 2</div>
+        <a href="#" class="upcoming-tickets-link">Get tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 88K</span>
+          <span class="upcoming-love">❤️ 76k</span>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card 6 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost6.jpg" alt="28 YRS">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">2:10</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">20 Tháng 6 Này</span>
+        <div class="upcoming-title">28 Năm Sau</div>
+        <a href="#" class="upcoming-tickets-link">Get tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 13K</span>
+          <span class="upcoming-love">❤️ 6k</span>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card 7 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost7.jpg" alt="Jurrasic World Rebirth">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">2:30</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">Mùng 2 Tháng 7 Này</span>
+        <div class="upcoming-title">Công Viên Khủng Long: Tái Sinh</div>
+        <a href="#" class="upcoming-tickets-link">Get tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 128K</span>
+          <span class="upcoming-love">❤️ 202k</span>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card 8 -->
+    <div class="upcoming-movie-card">
+      <div class="upcoming-thumbnail">
+        <img src="images/coming/cost8.jpg" alt="Nobody 2">
+        <button class="upcoming-play-btn" aria-label="Play trailer"></button>
+        <span class="upcoming-duration">3:00</span>
+      </div>
+      <div class="upcoming-movie-info">
+        <span class="upcoming-date">15 Tháng 8 Này</span>
+        <div class="upcoming-title">Kẻ Vô Danh 2</div>
+        <a href="#" class="upcoming-tickets-link">Get tickets</a>
+        <div class="upcoming-reactions">
+          <span class="upcoming-like">👍 103K</span>
+          <span class="upcoming-love">❤️ 93k</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="upcoming-arrow upcoming-arrow-right" aria-label="Next">&#8250;</button>
+</section>
+  <section class="top-news-section">
+  <div class="top-news-header">
+    <div class = "header-hightlight">
+    <span class="header-icon"><i class="fas fa-bullhorn"></i></span>
+    </div>
+    <h2>Top news <span class="arrow">›</span></h2>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn carousel-prev" aria-label="Previous news">&#8249;</button>
+    <div class="news-carousel">
+      <!-- Top news cards -->
+    </div>
+    <button class="carousel-btn carousel-next" aria-label="Next news">&#8250;</button>
+  </div>
+  <div class="news-categories">
+    <button class="category-btn active" data-category="top">Top news</button>
+    <button class="category-btn" data-category="movie">Movie news</button>
+    <button class="category-btn" data-category="tv">TV news</button>
+    <button class="category-btn" data-category="celebrity">Celebrity news</button>
+  </div>
+</section>
+    <section class="explore-more">
+  <div class="explore-more__header">
+    <span class="explore-more__title"><i class="fas fa-search"></i>   Khám Phá Thêm</span>
+    <a href="#" class="explore-more__viewall">Xem tất cả</a>
+  </div>
+  <div class="explore-more__list">
+    <a href="#" class="explore-more__card">
+      <img src="images/khampha/kp1.jpg" alt="What to Watch">
+      <div class="explore-more__card-title">Xem Gì Hôm Nay</div>
+    </a>
+    <a href="#" class="explore-more__card">
+      <img src="images/khampha/kp2.jpg" alt="Awards Tour">
+      <div class="explore-more__card-title">Liên Hoan Phim Cannes 2025</div>
+    </a>
+    <a href="#" class="explore-more__card">
+      <img src="images/khampha/kp3.jpg" alt="Verified Hot Movies">
+      <div class="explore-more__card-title">Những Diễn Viên Xuất Sắc Nhất Mọi Thời Đại</div>
+    </a>
+    <a href="#" class="explore-more__card">
+      <img src="images/khampha/kp4.webp" alt="Introducing Fandango FanClub">
+      <div class="explore-more__card-title">Những Đạo Diễn Đứng Đằng Sau Thành Công Của Điện Ảnh Việt</div>
+    </a>
+  </div>
+</section>
+    <!-- Section Vừa Mới Xem -->
+<section class="recently-viewed-section">
+  <h2 class="rv-title">Vừa Mới Xem</h2>
+  <ul id="rv-list" class="rv-list">
+    <li class="rv-empty">Bạn chưa vừa xem mục nào.</li>
+  </ul>
+  <button id="rv-clear" class="rv-clear-btn" style="display:none;">Clear all</button>
+</section>
+    <section><h2></h2></section>
+  </main>
+  <!-- Back to top -->
+ <!-- Nút Back to top dạng nổi giữa trên cùng -->
+<button id="backToTopBtn" title="Back to top">
+  <span style="font-size: 18px; vertical-align: top;">⟲</span>
+  <span style="vertical-align: top;">Trở Lại</span>
+</button>
+    <footer>
+      <div class = "footer">
+      <div class="footer-boxes">
+        <div class="footer-box">
+          <h3>Tham gia cộng đồng TumbleWeed ngay nha</h3>
+          <div class="social-icons">
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <a class href = "https://www.facebook.com/qa.13.03/"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+    
+        <div class="footer-box">
+          <div class="footer-box-text">
+          <h3>Donate cho mình ít coffee</h3>
+          <h4>Nguyễn Quang Anh</h4>
+          </div>
+          <div class="qr-code">
+            <img src="images/qr.jpg" alt="QR code" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-links">
+        <div class="footer-links-row">
+          <a href="#">Giúp đỡ</a>
+          <a href="#">Chính sách</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Cookies</a>
+          <a href="#">Quảng cáo</a>
+        </div>
+        <div class="footer-links-row">
+          <a href="#">Trang chủ</a>
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Việc làm</a>
+          <a href="#">Thông cáo</a>
+          <a href="#">Nhà đầu tư</a>
+        </div>
+      </div>
+    
+      <p class="footer-note">Copyrights by Lao 3 Khổ 4 from 2025-2026 · © 2025 Tumbleweed,Inc.</p>
+      </div>
+    </footer>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="recently-viewed.js"></script>
+    <script src="user.js"></script>
+    <script src="login.js"></script>
+    <script src="admin.js"></script>
+    <script src="store.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="list.js"></script>
+</body>
+</html>
