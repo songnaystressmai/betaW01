@@ -1,0 +1,1 @@
+cop hết các cái folder ra , tạo thư mục images rồi để vào, để cùng cấp với các file khác
